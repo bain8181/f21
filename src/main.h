@@ -13,12 +13,6 @@
 void test_json()
 {
 	Json::Value jvalue;
-	//jvalue["lname"]="hou";
-	//jvalue["fname"]="bing";
-	//jvalue["age"]=34;
-	//jvalue["salary"]=7000.3;
-	//jvalue["zip"]="6100";
-
 
 	jvalue["Id"] = 6;
 	jvalue["Model"] = "Lumia 2011_kkk";

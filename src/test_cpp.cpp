@@ -10,12 +10,25 @@
 #include <vector>
 #include <map>
 #include <string>
+#include <thread>
 #include "main.h"
+#include "threaddemo.h"
 
 using namespace std;
 
 int main(int argc,char* argv[]) {
 
-	test_json();
+	//test_json();
+	thread_demo demo;
+
+	std::cout<<"Press any key to Continue.\n";
+	std::cin.get();
+	demo.stop();
+
+	std::cout<<"Press any key to Exit.\n";
+	std::cin.get();
+
+	std::cout<<"Main thread : "<<std::this_thread::get_id()<<" Exit!\n";
+
 	return 0;
 }
