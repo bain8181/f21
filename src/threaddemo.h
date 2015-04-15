@@ -8,11 +8,13 @@
 #ifndef THREADDEMO_H_
 #define THREADDEMO_H_
 
+//thread_control
 typedef struct _thread_ctl_{
 	bool b_Contrl {false};
 	bool b_State {false};
 }thread_ctl,*pthread_ctl;
 
+//c++11 thread_demo_test
 class thread_demo {
 public:
 	thread_demo();

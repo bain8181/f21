@@ -13,12 +13,15 @@
 #include <thread>
 #include "main.h"
 #include "threaddemo.h"
+#include "boostdemo.h"
 
 using namespace std;
 
 int main(int argc,char* argv[]) {
 
 	//test_json();
+	test_boost_bimap();
+
 	thread_demo demo;
 
 	std::cout<<"Press any key to Continue.\n";
