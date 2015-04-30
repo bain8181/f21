@@ -45,7 +45,7 @@ int main(int argc,char* argv[])
 
 		//在通讯器ic上创建对象适配器SimplePrinterAdapater
 		//缺省协议（TCP），在端口10000上监听
-		Ice::ObjectAdapterPtr adapter = ic->createObjectAdapterWithEndpoints("SimplePrinterAdapter","default -p 10000");
+		Ice::ObjectAdapterPtr adapter = ic->createObjectAdapterWithEndpoints("SimplePrinterAdapter","default  -h 0.0.0.0 -p 10000");
 
 		//创建服务类PrintI的实例
 		Ice::ObjectPtr object = new PrinterI();
